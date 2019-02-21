@@ -19,7 +19,9 @@ html {
 /* Body formatting */
 
 body {
-    background: #000000;
+    background: #ffffff;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Social Icons */
@@ -39,7 +41,7 @@ body {
 
 /* Formatting for the hero */
 
-.heading {
+#home .heading {
     color: #4436be;
     font-size: 1.3rem;
     font-weight: 900;
@@ -50,7 +52,7 @@ body {
     margin-right: 20%;
 }
 
-.title {
+#home .title {
     color: #ffffff;
     font-size: 84px;
     font-weight: 900;
@@ -62,7 +64,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.subtitle {
+#home .subtitle {
     color: #8b92fac4;
     font-size: 1.7rem;
     font-weight: 900;
@@ -124,4 +126,61 @@ nav a:hover {
     color: #4688df;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
     transition: 0.4s;
+}
+
+/* About section */
+#about {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    color: #3a3a3a;
+}
+
+.about-elements {
+    display: inline-block;
+    padding-top: 30px;
+}
+
+#about .heading {
+    color: #3a3a3a;
+    display: inline-block;
+    position: center;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 900;
+    line-height: 1.565;
+    border-bottom: #3a3a3a solid 2px;
+    transition: 0.4s;
+}
+
+#about .heading:hover {
+    color: #4b4b4b;
+    display: inline-block;
+    position: center;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.565;
+    border-bottom: #4b4b4b solid 2px;
+    transition: 0.4s;
+}
+
+.about-title {
+    color: #3a3a3a;
+    position: center;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 900;
+    line-height: 1.565;
+}
+
+.about-subtitle {
+    color: #3a3a3a;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    position: center;
+    text-align: center;
 }
