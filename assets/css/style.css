@@ -119,13 +119,13 @@ nav a {
     text-align: center;
 
     text-decoration: none;
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
 }
 
 nav a:hover {
     color: #4688df;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
 }
 
 /* About section */
@@ -151,7 +151,7 @@ nav a:hover {
     font-weight: 900;
     line-height: 1.565;
     border-bottom: #3a3a3a solid 2px;
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
 }
 
 #about .heading:hover {
@@ -163,7 +163,8 @@ nav a:hover {
     font-weight: 800;
     line-height: 1.565;
     border-bottom: #4b4b4b solid 2px;
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }
 
 .about-title {
@@ -183,4 +184,24 @@ nav a:hover {
     padding-left: 25px;
     position: center;
     text-align: center;
+}
+
+#about .is-child {
+    transition: 0.4s ease-in-out;
+}
+
+#about .is-child:hover {
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+
+#about .icon:hover {
+    color: rgb(63, 85, 155);
+    transition: 0.4s ease-in-out;
+}
+
+#about .icon {
+    transition: 0.4s ease-in-out;
 }
