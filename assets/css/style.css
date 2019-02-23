@@ -2,54 +2,88 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
 
 /* Hiding the scroll bar */
+/* Main Colour: #ffffff */
+/* Secondary Colour: #508cda */
 
 html {
     overflow: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    pointer-events: all;
 }
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
 }
-/* optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
-}
 
 /* Body formatting */
+#particles-js {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("");
+    z-index: 999;
+    pointer-events: none;
+}
+
+#particles-js canvas{
+    background-color: transparent !important;
+    position: absolute !important;
+    width: 100% !important; 
+    height: 100% !important; 
+    left: 0;
+    top: 0;
+}
 
 body {
-    background: #ffffff;
+    background: #0f1720; /* #1a2938 */;
     overflow: hidden;
     font-family: 'Raleway', sans-serif;
+    color: #ffffff;
 }
 
 /* Social Icons */
-/* Style all font awesome icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+.social-icons {
     text-align: center;
+    float: left;
+}
+
+.social-icons i {
+    padding-right: 5%;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icon {
     text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
+    float: left;
+    color: #ffffff;
+    position: left;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.social-icon:hover {
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    color: #508cda;
+    transition: transform 0.5s ease-in-out;
+    transform: rotateZ(360deg);
+}
 
 /* Formatting for the hero */
 
 #home .heading {
-    color: #4436be;
+    color: #508cda;
     font-size: 1.3rem;
     font-weight: 900;
     line-height: 1.565;
     letter-spacing: .3rem;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     font-family: 'Lato', sans-serif;
-    margin-right: 20%;
+    margin-right: 26%;
 }
 
 #home .title {
@@ -65,7 +99,7 @@ body {
 }
 
 #home .subtitle {
-    color: #8b92fac4;
+    color: #508cda;
     font-size: 1.7rem;
     font-weight: 900;
     line-height: 1.565;
@@ -91,50 +125,46 @@ body {
 /* Navbar just under the hero */
 
 nav {
-    width: 100%;
-    height: 50px;
-    background-color: rgb(49, 47, 58);
+    background-color: rgb(30, 28, 36, 0);
     overflow: hidden;
     text-align: center;
-    position: relative;
+    width: 35%;
+    float: right;
+    position: right;
 }
 
 .nav-wrap {
-    height: initial;
+    text-align: center;
 }
 
 nav a {
     display: inline-block;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 0.75rem;
-    color: white;
+    font-size: 0.75rem;
+    line-height: 0.6rem;
+    color: #508cda;
+    letter-spacing: normal;
 
     padding-top: 20px;
-    padding-right: 25px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    position: center;
-    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+
 
     text-decoration: none;
     transition: 0.4s ease-in-out;
 }
 
 nav a:hover {
-    color: #4688df;
+    color: #ffffff;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
     transition: 0.4s ease-in-out;
 }
 
 /* About section */
 #about {
-    text-align: center;
-    position: relative;
     overflow: hidden;
     width: 100%;
-    color: #3a3a3a;
 }
 
 .about-elements {
@@ -143,32 +173,15 @@ nav a:hover {
 }
 
 #about .heading {
-    color: #3a3a3a;
     display: inline-block;
-    position: center;
-    text-align: center;
-    font-size: 1.7rem;
-    font-weight: 900;
-    line-height: 1.565;
-    border-bottom: #3a3a3a solid 2px;
-    transition: 0.4s ease-in-out;
-}
-
-#about .heading:hover {
-    color: #4b4b4b;
-    display: inline-block;
-    position: center;
-    text-align: center;
-    font-size: 1.8rem;
+    position: relative;
+    font-size: 3rem;
     font-weight: 800;
-    line-height: 1.565;
-    border-bottom: #4b4b4b solid 2px;
+    line-height: 1.8;
     transition: 0.4s ease-in-out;
-    text-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }
 
 .about-title {
-    color: #3a3a3a;
     position: center;
     text-align: center;
     font-size: 1.7rem;
@@ -177,7 +190,6 @@ nav a:hover {
 }
 
 .about-subtitle {
-    color: #3a3a3a;
     padding-top: 20px;
     padding-right: 25px;
     padding-bottom: 10px;
@@ -188,20 +200,36 @@ nav a:hover {
 
 #about .is-child {
     transition: 0.4s ease-in-out;
+    text-align: center;
+    border: #ffffff solid 1px;
+    background-color: #0f1720;
+    color: #ffffff;
 }
 
 #about .is-child:hover {
-    background-color: rgb(219, 219, 219);
+    color: #0f1720;
+    background-color: rgb(240, 240, 240);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
     transform: scale(1.1);
     transition: 0.4s ease-in-out;
 }
 
-#about .icon:hover {
+#about .icon {
     color: rgb(63, 85, 155);
-    transition: 0.4s ease-in-out;
 }
 
-#about .icon {
+/* Bio section */
+#bio {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#bio h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.8;
     transition: 0.4s ease-in-out;
 }
