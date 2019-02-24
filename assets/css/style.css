@@ -8,7 +8,6 @@
 html {
     overflow: scroll;
     overflow-x: hidden;
-    scroll-behavior: smooth;
     pointer-events: all;
 }
 ::-webkit-scrollbar {
@@ -26,11 +25,11 @@ html {
     pointer-events: none;
 }
 
-#particles-js canvas{
+#particles-js canvas {
     background-color: transparent !important;
     position: absolute !important;
     width: 100% !important; 
-    height: 100% !important; 
+    height: 400% !important; 
     left: 0;
     top: 0;
 }
@@ -73,6 +72,36 @@ body {
     transform: rotateZ(360deg);
 }
 
+/* Special Formatters */
+#container {
+    perspective: 30px;
+}
+  
+#inner {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+}
+
+.horizontal-line {
+    background-color: #ffffff;
+    display: block;
+    width: 50px;
+    height: 1px;
+    opacity: .3;
+    margin: 20px auto;
+}
+
+.horizontal-line-left {
+    background-color: #ffffff;
+    display: block;
+    width: 50px;
+    height: 1px;
+    opacity: .3;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
 /* Formatting for the hero */
 
 #home .heading {
@@ -83,7 +112,7 @@ body {
     letter-spacing: .3rem;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     font-family: 'Lato', sans-serif;
-    margin-right: 26%;
+    margin-right: 15%;
 }
 
 #home .title {
@@ -122,9 +151,9 @@ body {
     height: auto;
 }
 
-/* Navbar just under the hero */
+/* Navbar just above the hero */
 
-nav {
+#home nav {
     background-color: rgb(30, 28, 36, 0);
     overflow: hidden;
     text-align: center;
@@ -133,11 +162,11 @@ nav {
     position: right;
 }
 
-.nav-wrap {
+#home .nav-wrap {
     text-align: center;
 }
 
-nav a {
+#home nav a {
     display: inline-block;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -155,8 +184,40 @@ nav a {
     transition: 0.4s ease-in-out;
 }
 
+#home nav a:hover {
+    color: #ffffff; 
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+    transition: 0.4s ease-in-out;
+}
+
+nav {
+    background-color: rgb(30, 28, 36, 0);
+    overflow: hidden;
+    text-align: right;
+    width: 100%;
+    padding-right: 1%;
+}
+
+nav a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.6rem;
+    color: #508cda;
+    position: relative;
+
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
 nav a:hover {
-    color: #ffffff;
+    color: #ffffff; 
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
     transition: 0.4s ease-in-out;
 }
@@ -215,14 +276,14 @@ nav a:hover {
 }
 
 #about .icon {
-    color: rgb(63, 85, 155);
+    color: #508cda;
 }
 
 /* Bio section */
 #bio {
-    position: relative;
     overflow: hidden;
     width: 100%;
+    height: 100%;
 }
 
 #bio h1 {
@@ -230,6 +291,19 @@ nav a:hover {
     position: relative;
     font-size: 3rem;
     font-weight: 800;
-    line-height: 1.8;
+    line-height: 1.7;
     transition: 0.4s ease-in-out;
+}
+
+/* Text that will float on the left */
+.text-left {
+    float: left;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+}
+
+.text-left p {
+    padding-bottom: 2em;
+    font-size: 0.9rem;
 }
