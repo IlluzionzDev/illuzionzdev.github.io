@@ -29,6 +29,24 @@ html {
     background-color: transparent !important;
     position: absolute !important;
     width: 100% !important; 
+    height: 100% !important; 
+    left: 0;
+    top: 0;
+}
+
+#particles-js-about {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("");
+    z-index: 999;
+    pointer-events: none;
+}
+
+#particles-js-about canvas {
+    background-color: transparent !important;
+    position: absolute !important;
+    width: 100% !important; 
     height: 400% !important; 
     left: 0;
     top: 0;
