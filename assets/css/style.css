@@ -124,7 +124,7 @@ body {
 
 #home .heading {
     color: #508cda;
-    font-size: 1.3rem;
+    font-size: 1.5vw;
     font-weight: 900;
     line-height: 1.565;
     letter-spacing: .3rem;
@@ -135,7 +135,7 @@ body {
 
 #home .title {
     color: #ffffff;
-    font-size: 84px;
+    font-size: 5.8vw;
     font-weight: 900;
     line-height: 1.071;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.671);
@@ -147,7 +147,7 @@ body {
 
 #home .subtitle {
     color: #508cda;
-    font-size: 1.7rem;
+    font-size: 2vw;
     font-weight: 900;
     line-height: 1.565;
     letter-spacing: .3rem;
@@ -188,7 +188,7 @@ body {
     display: inline-block;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 0.75rem;
+    font-size: 0.9vw;
     line-height: 0.6rem;
     color: #508cda;
     letter-spacing: normal;
@@ -307,7 +307,7 @@ nav a:hover {
 #bio h1 {
     display: inline-block;
     position: relative;
-    font-size: 3rem;
+    font-size: 3.3vw;
     font-weight: 800;
     line-height: 1.7;
     transition: 0.4s ease-in-out;
@@ -319,9 +319,11 @@ nav a:hover {
     text-align: left;
     width: 50%;
     height: 100%;
+    position: relative;
 }
 
 .text-left p {
     padding-bottom: 2em;
-    font-size: 0.9rem;
+    letter-spacing: .02rem;
+    font-size: 1vw;
 }
