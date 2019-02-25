@@ -92,13 +92,15 @@ body {
 
 /* Special Formatters */
 #container {
-    perspective: 30px;
+    perspective: 40px;
 }
   
 #inner {
     transition: transform 0.5s;
     -webkit-transition: transform 0.5s;
-    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    box-shadow: 2px 2px 50px rgba(255, 255, 255, 0.2);
 }
 
 .horizontal-line {
@@ -165,7 +167,7 @@ body {
 
     position: relative;
     background-repeat:no-repeat;
-    background-size:100%;
+    background-size: 100%;
     height: auto;
 }
 
@@ -326,4 +328,24 @@ nav a:hover {
     padding-bottom: 2em;
     letter-spacing: .02rem;
     font-size: 1vw;
+}
+
+.image-right {
+    float: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    position: right;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10vw;
+}
+
+.about-image-1 {
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 18em;
+    width: 20em;
 }

@@ -9,7 +9,7 @@ new WOW().init();
 (function() {
   // Init
   var container = document.getElementById("container"),
-      inner = document.getElementById("inner");
+    inner = document.getElementById("inner");
 
   // Mouse
   var mouse = {
@@ -34,15 +34,15 @@ new WOW().init();
   // Track the mouse position relative to the center of the container.
   mouse.setOrigin(container);
 
-  //----------------------------------------------------
+  //-----------------------------------------
 
   var counter = 0;
-  var refreshRate = 10;
+  var updateRate = 10;
   var isTimeToUpdate = function() {
-    return counter++ % refreshRate === 0;
+    return counter++ % updateRate === 0;
   };
 
-  //----------------------------------------------------
+  //-----------------------------------------
 
   var onMouseEnterHandler = function(event) {
     update(event);
@@ -58,7 +58,7 @@ new WOW().init();
     }
   };
 
-  //----------------------------------------------------
+  //-----------------------------------------
 
   var update = function(event) {
     mouse.updatePosition(event);
@@ -72,14 +72,14 @@ new WOW().init();
     var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
     inner.style.transform = style;
     inner.style.webkitTransform = style;
-    inner.style.mozTranform = style;
+    inner.style.mozTransform = style;
     inner.style.msTransform = style;
     inner.style.oTransform = style;
   };
 
-  //--------------------------------------------------------
+  //-----------------------------------------
 
-  container.onmousemove = onMouseMoveHandler;
-  container.onmouseleave = onMouseLeaveHandler;
   container.onmouseenter = onMouseEnterHandler;
+  container.onmouseleave = onMouseLeaveHandler;
+  container.onmousemove = onMouseMoveHandler;
 })();
