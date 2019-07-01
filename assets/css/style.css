@@ -21,6 +21,7 @@ html {
     pointer-events: all;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
