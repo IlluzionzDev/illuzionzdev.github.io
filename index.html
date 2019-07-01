@@ -5,52 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jamin Stratford</title>
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-  <section id="home" class="hero is-fullheight">
-    <!-- Hero main content -->
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="hero-content">
-          <h1 class="heading">
-          Hello there,
-          <nav>
-            <a>HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="#">SKILLS</a>
-            <a href="#">PORTFOLIO</a>
-          </nav>
-          </h1>
-          <h2 class="title">
-          I'm Jamin Stratford.
-          </h2>
-          <h2 class="subtitle">
-          <em>Development</em>
-          <ul class="social-icons">
-            <li><a href="https://www.instagram.com/jaminstratford/"><i class="social-icon fab fa-instagram fa-1x"></i></a></li>
-            <li><a href="https://twitter.com/jaminstratford"><i class="social-icon fab fa-twitter fa-1x"></i></a></li>
-            <li><a href="https://github.com/IlluzionzDev"><i class="social-icon fab fa-github fa-1x"></i></a></li>
-          </ul>
-          </h2>
+  <nav>
+    <ul class="left-nav">
+      <li><a href="#" class="nav-title">JAMIN STRATFORD</a></li>
+    </ul>
+    <ul class="right-nav">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">PORTFOLIO</a></li>
+    </ul>
+  </nav>
+  <main class="wrapper">
+    <section id="hero" class="parallax">
+      <div class="hero-title align-left">
+        <h1>Hey there!
+        <br/>I'm Jamin</h1>
+        <p>Hi there! My name is <span>Jamin Stratford</span> and I work as a <span>Software Developer</span> based in <span>New Zealand</span>, developing and designing various software programs. 
+          I am currently 15 years of age and still continuing to learn.</p>
+          <button type="button" class="hero-btn btn-hover">ABOUT</button>
+      </div>
+      <div class="container">
+        <div class="background-img" id="scene">
+            <div class="layer background bg-3" data-depth="0.6">
+                <img src="assets/img/background.png" alt="Background">
+              </div>
+            <div class="layer background bg-2" data-depth="0.7">
+                <img src="assets/img/background.png" alt="Background">
+              </div>
+            <div class="layer background bg-1" data-depth="0.8">
+                <img src="assets/img/background.png" alt="Background">
+              </div>
+            <div class="layer background" data-depth="0.9">
+              <img src="assets/img/background.png" alt="Background">
+            </div>
+            <div class="layer background-txt" data-depth="0.15">
+                <h2>DEVELOPER</h2>
+            </div>
         </div>
       </div>
-    </div>
-  </section>
-  <div id="particles-js">
-    <canvas class="particles-container"></canvas>
-  </div>
+    </section>
+    <section id="about">
+      <h1 class="about-title">ABOUT ME</h1>
+      <div class="about-content">
+        <p>I'm <em>Jamin</em>, 15 year old passionate developer from <em>New Zealand</em>.</p>
+
+        <p>I've mainly worked around <em>SpigotMC</em> but have branched into other development areas. 
+          I now work with many languages and frameworks, and cover aspects such as <em>Software Development</em>, <em>Web Development</em>, and <em>Game Developement</em>.</p>
+
+        <p>I always had an interest in games and design, and roblox was a game that sparked that. 
+          I remember being intrigued in the Developer Studio they had and started to teach myself LUA. 
+          Lua was a easy language to learn, and really got me into programming. 
+          A couple years later when I started to play Minecraft, I became interested in how the servers worked. 
+          From here, I started to develop an interest in Spigot, which is a server-side software for minecraft to run servers. </p>
+
+        <p>At this point, backend was something I enjoyed developing and took time to research servers and how to code the plugins that run the server. 
+            Spigot and their plugins were coded in Java, so this is where I picked up an interest in Java. 
+            From here I learned more and more about Spigot, and more and more about Java. 
+            This happened about 2 years ago, which means I have been actively learning about programming for about 2 years.</p>
+            
+        <p>From then, I have showed alot more interest in other programming things, such as Web Development, and Game Development. 
+          I have taught myself many more languages and frameworks, and continue to develop programs and plugins to this day.</p>
+      </div>
+    </section>
+  </main>
+
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="assets/js/particles.js"></script>
-  <script src="assets/js/index-particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
