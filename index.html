@@ -14,63 +14,73 @@
 <body>
   <nav>
     <ul class="left-nav">
-      <li><a href="#" class="nav-title">JAMIN STRATFORD</a></li>
+      <li><a href="#hero" class="nav-title">JAMIN STRATFORD</a></li>
     </ul>
     <ul class="right-nav">
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">PORTFOLIO</a></li>
+      <li><a href="#hero">HOME</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
     </ul>
   </nav>
   <main class="wrapper">
     <section id="hero" class="parallax">
+        <div class="moon-container">
+          <div id="scene">
+            <div class="layer background moon-img" data-depth="0.6">
+              <img src="assets/img/moon.svg" alt="Background">
+            </div>
+            <div class="layer background-txt" data-depth="0.15">
+              <h2>DEVELOPER</h2>
+            </div>
+            <div class="layer moonlight background" data-depth="0.55">
+                <img src="assets/img/moonlight.svg" alt="Background">
+              </div>
+              <div class="layer stars moonlight background" data-depth="0.5">
+                <img src="assets/img/stars.svg" alt="Background">
+              </div>
+          </div>
+        </div>
       <div class="hero-title align-left">
         <h1>Hey there!
         <br/>I'm Jamin</h1>
         <p>Hi there! My name is <span>Jamin Stratford</span> and I work as a <span>Software Developer</span> based in <span>New Zealand</span>, developing and designing various software programs. 
           I am currently 15 years of age and still continuing to learn.</p>
-          <a href="#about"><button type="button" class="hero-btn btn-hover">ABOUT</button></a>
-      </div>
-      <div class="container">
-        <div class="background-img" id="scene">
-            <div class="layer background bg-3" data-depth="0.6">
-                <img src="assets/img/background.png" alt="Background">
-              </div>
-            <div class="layer background bg-2" data-depth="0.7">
-                <img src="assets/img/background.png" alt="Background">
-              </div>
-            <div class="layer background bg-1" data-depth="0.8">
-                <img src="assets/img/background.png" alt="Background">
-              </div>
-            <div class="layer background" data-depth="0.9">
-              <img src="assets/img/background.png" alt="Background">
-            </div>
-            <div class="layer background-txt" data-depth="0.15">
-                <h2>DEVELOPER</h2>
-            </div>
+        <a href="#about"><button type="button" class="hero-btn btn-hover">ABOUT</button></a>
+        <div class="social-icons">
+            <ul>
+                <li class="instagram"><a href="https://www.instagram.com/jaminstratford"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li class="github"><a href="https://github.com/IlluzionzDev"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></i></li>
+            </ul>
         </div>
       </div>
     </section>
     <section id="about" class="about">
-      <h1 class="about-title">ABOUT ME</h1>
+      <img src="assets/img/about-bg.png" alt="Landscape" class="about-bg">
+      <h1 class="section-title">ABOUT ME</h1>
       <div class="about-content">
-        <p>I'm <em>Jamin</em>, 15 year old passionate developer from <em>New Zealand</em>.</p>
+        <p>I'm <span>Jamin</span>, 15 year old passionate developer from <span>New Zealand</span>.</p>
 
         <p>I've mainly worked around <em>SpigotMC</em> but have branched into other development areas. 
-          I now work with many languages and frameworks, and cover aspects such as <em>Software Development</em>, <em>Web Development</em>, and <em>Game Developement</em>.</p>
+          I now work with many languages and frameworks, and cover aspects such as <span>Software Development</span>, <span>Web Development</span>, and <span>Game Developement</span>.</p>
 
-        <p>I always had an interest in games and design, and roblox was a game that sparked that. 
-          I remember being intrigued in the Developer Studio they had and started to teach myself LUA. 
-          Lua was a easy language to learn, and really got me into programming. 
-          A couple years later when I started to play Minecraft, I became interested in how the servers worked. 
-          From here, I started to develop an interest in Spigot, which is a server-side software for minecraft to run servers. </p>
+        <p>I have always had an <em>interest in designing programs</em> and how things worked. So back when I started playing Minecraft, I got really 
+          intriguied into how the servers worked and what went into making them. This is where I discovered <span>Java</span>, so I began to learn Java while
+          developing code for the <em>back-end</em> of minecraft servers.
+        </p>
 
-        <p>At this point, backend was something I enjoyed developing and took time to research servers and how to code the plugins that run the server. 
-            Spigot and their plugins were coded in Java, so this is where I picked up an interest in Java. 
-            From here I learned more and more about Spigot, and more and more about Java. 
-            This happened about 2 years ago, which means I have been actively learning about programming for about 2 years.</p>
+        <p>This is where my <em>interest for programming sparked</em> as I began to learn more and more about Java and also about back-end development. From this 
+          point I moved onto other languages to take my <em>interest further</em> and build other things. I went into areas like back-end web development and 
+          even some front-end like this website your reading now.
+        </p>
             
-        <p>From then, I have showed alot more interest in other programming things, such as Web Development, and Game Development. 
-          I have taught myself many more languages and frameworks, and continue to develop programs and plugins to this day.</p>
+        <p>So now I continue to expand my <span>creativity</span> and <span>interest</span> by continuing to <em>learn new languages and frameworks</em>, and also building
+          new technologys that benefit our <em>world</em>.
+        </p>
+      </div>
+    </section>
+    <section id="skills">
+      <h1 class="section-title">SKILLS</h1>
+      <div class="skills-content">
+
       </div>
     </section>
   </main>
