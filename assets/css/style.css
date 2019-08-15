@@ -16,8 +16,8 @@
 }
 
 html {
-    overflow: scroll;
     overflow-x: hidden;
+    overflow-y: scroll;
     pointer-events: all;
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ html {
 
 body {
     background-image: linear-gradient(to bottom, #072142, #061c37, #07182b, #061220, #020b16);
-    overflow: hidden;
+    overflow: visible;
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 0;
@@ -443,6 +443,7 @@ nav a:hover {
     text-align: left;
     margin-left: 10%;
     letter-spacing: 0.2em;
+    margin-top: 0;
 }
 
 .about-content {
@@ -494,22 +495,23 @@ nav a:hover {
 
 #skills {
     background-color: #020b16;
-    height: 100%;
-    width: 100%;
+    overflow-y: hidden;
     position: relative;
-    overflow: hidden;
 }
 
 .skills-content {
     padding: 10px;
     max-width: 80%;
     margin: auto;
+    margin-top: 0;
     line-height: 30px;
     letter-spacing: 0.01em;
 }
 
 .skill-set {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .skill-item {
@@ -524,6 +526,10 @@ nav a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.skill-item:nth-child(-n+2) {
+    margin-top: 0;
 }
 
 .skill-name {
@@ -653,6 +659,7 @@ nav a:hover {
         line-height: 30px;
         letter-spacing: 0.01em;
         text-align: center;
+        height: 100%;
     }
 
     .skill-item {
@@ -723,8 +730,6 @@ nav a:hover {
 
 #portfolio {
     background-color: #020b16;
-    height: 100%;
-    width: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -805,10 +810,16 @@ nav a:hover {
 @media only screen and (max-device-width: 480px) {
     #portfolio {
         background-color: #020b16;
-        height: 100vh;
-        width: 100%;
         position: relative;
-        overflow: hidden;
+    }
+
+    .portfolio-content {
+        padding: 10px;
+        max-width: 80%;
+        margin: auto;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        height: 100vh;
     }
 
     .portfolio-item {
